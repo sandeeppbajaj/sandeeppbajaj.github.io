@@ -62,56 +62,52 @@ var education = {
 var work = {
   jobs:[
     {
-      employer:'GE Software',
-      title:'Software Consultant',
-      dates:'Sep, 2013 - future',
-      description:'Who moved my cheese chessy feet cauliflower '+
-        'cheese. Queso taleggio when the cheese comes out '+
-        'everybody\'s happy airedale ricotta cheese and wine '+
-        'paneer camembert de normandie. Swiss mozzarella cheese '+
-        'slices feta fromage frais airedale swiss cheesecake. Hard '+
-        'cheese blue castello halloumi parmesan say cheese skinking '+
-        'bishop jarlsberg.',
-      location: 'San Ramon, CA'
+      employer:'GE Digital',
+      title:'Software Developer (consultant)',
+      dates:'Aug, 2015 - present',
+      description:'',
+      location: 'San Ramon, CA, USA',
+      link: 'http://www.ge.com/digital/'
+    },
+    {
+      employer:'eBay Inc.',
+      title:'Software Developer (consultant)',
+      dates:'Oct, 2014 - Aug, 2015',
+      description:'',
+      location: 'San Jose, CA, USA',
+      link: 'https://www.ebayinc.com/'
+    },
+    {
+      employer:'GE Digital',
+      title:'Software Developer (consultant)',
+      dates:'Sep, 2013 - Sep, 2014',
+      description:'',
+      location: 'San Ramon, CA, USA',
+      link: 'http://www.ge.com/digital/'
     },
     {
       employer:'PressFit Pipe & Profile',
-      title:'Senior Software Engineer',
+      title:'Operations Lead',
       dates:'Mar, 2011 - Feb, 2013',
-      description:'Who moved my cheese chessy feet cauliflower '+
-        'cheese. Queso taleggio when the cheese comes out '+
-        'everybody\'s happy airedale ricotta cheese and wine '+
-        'paneer camembert de normandie. Swiss mozzarella cheese '+
-        'slices feta fromage frais airedale swiss cheesecake. Hard '+
-        'cheese blue castello halloumi parmesan say cheese skinking '+
-        'bishop jarlsberg.',
-      location: 'Bhiwandhi, Maharashtra, India'
+      description:'',
+      location: 'Bhiwandhi, Maharashtra, India',
+      link: 'http://www.pressfit.in/'
     },
     {
       employer:'Larsen & Toubro',
       title:'Senior Software Engineer',
       dates:'July, 2010 - Feb, 2011',
-      description:'Who moved my cheese chessy feet cauliflower '+
-        'cheese. Queso taleggio when the cheese comes out '+
-        'everybody\'s happy airedale ricotta cheese and wine '+
-        'paneer camembert de normandie. Swiss mozzarella cheese '+
-        'slices feta fromage frais airedale swiss cheesecake. Hard '+
-        'cheese blue castello halloumi parmesan say cheese skinking '+
-        'bishop jarlsberg.',
-      location: 'Mumbai, Maharashtra, India'
+      description:'',
+      location: 'Mumbai, Maharashtra, India',
+      link: 'http://www.larsentoubro.com/'
     },
     {
       employer:'Larsen & Toubro',
       title:'Software Engineer',
       dates:'July, 2008 - June, 2010',
-      description:'Who moved my cheese chessy feet cauliflower '+
-        'cheese. Queso taleggio when the cheese comes out '+
-        'everybody\'s happy airedale ricotta cheese and wine '+
-        'paneer camembert de normandie. Swiss mozzarella cheese '+
-        'slices feta fromage frais airedale swiss cheesecake. Hard '+
-        'cheese blue castello halloumi parmesan say cheese skinking '+
-        'bishop jarlsberg.',
-      location: 'Bangalore, Karnataka, India'
+      description:'',
+      location: 'Bangalore, Karnataka, India',
+      link: 'http://www.larsentoubro.com/'
     }
   ]
 };
@@ -140,8 +136,8 @@ work.display = function(){
   for(var job in work.jobs){
     $('#workExperience').append(HTMLworkStart);
 
-    var formattedEmployer =  HTMLworkEmployer.replace
-      ('%data%',work.jobs[job].employer);
+    var formattedEmployer =  HTMLworkEmployer.replace('%data%',work.jobs[job].employer)
+                                             .replace('%link%',work.jobs[job].link);
     var formattedTitle = HTMLworkTitle.replace('%data%',work.jobs[job].title);
     var formattedEmployerTitle = formattedEmployer + formattedTitle;
     $('.work-entry:last').append(formattedEmployerTitle);
