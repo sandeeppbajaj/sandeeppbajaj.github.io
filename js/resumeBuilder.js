@@ -7,9 +7,9 @@ var bio = {
     mobile: '408-784-6174',
     email: 'sandeepp.bajaj@gmail.com',
     github: 'sandeeppbajaj',
-    location: 'San Jose, CA'
+    location: 'Newark, CA'
   } ,
-  biopic:'images/fry.jpg',
+  biopic:'images/SB DP.jpg',
   welcomeMessage:'Welcome to my sample resume',
   skills: skills
 };
