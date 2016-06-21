@@ -114,19 +114,58 @@ var work = {
 var projects = {
   projects:[
     {
-      title: 'Sample Project 1',
-      dates: '2014',
-      description: 'Who moved my cheese chessy feet cauliflower '+
-        'cheese. Queso taleggio when the cheese comes out '+
-        'everybody\'s happy airedale ricotta cheese and wine '+
-        'paneer camembert de normandie. Swiss mozzarella cheese '+
-        'slices feta fromage frais airedale swiss cheesecake. Hard '+
-        'cheese blue castello halloumi parmesan say cheese skinking '+
-        'bishop jarlsberg.',
-      images: [
-        'https://placeimg.com/110/111/tech',
-        'https://placeimg.com/111/111/tech'
-      ]
+      title: 'Asset Performance Management (APM)',
+      dates: '2015-2016',
+      description: '',
+      images: []
+    },
+    {
+      title: 'Supply Chain Optimization System',
+      dates: '2014-2015',
+      description: '',
+      images: []
+    },
+    {
+      title: 'Cath Lab Efficiency Management (CLEM)',
+      dates: '2013-2014',
+      description: '',
+      images: []
+    },
+    {
+      title: 'Quality Enhancement',
+      dates: '2011-2013',
+      description: '',
+      images: []
+    },
+    {
+      title: 'Inventory and Forecast Management System',
+      dates: '2011-2013',
+      description: '',
+      images: []
+    },
+    {
+      title: 'Reverse Auction',
+      dates: '2010-2011',
+      description: '',
+      images: []
+    },
+    {
+      title: 'Cash Flow Management System',
+      dates: '2010-2011',
+      description: '',
+      images: []
+    },
+    {
+      title: 'Calibration Management System',
+      dates: '2009-2010',
+      description: '',
+      images: []
+    },
+    {
+      title: 'Supplier Performance Management Dashboard',
+      dates: '2008-2009',
+      description: '',
+      images: []
     }
   ]
 };
