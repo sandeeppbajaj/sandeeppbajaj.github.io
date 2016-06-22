@@ -4,7 +4,7 @@ var bio = {
   name: 'Sandeep Bajaj',
   role: 'Full-Stack Developer',
   contacts: {
-    mobile: '408-784-6174',
+    mobile: '(408) 784-6174',
     email: 'sandeepp.bajaj@gmail.com',
     github: 'sandeeppbajaj',
     location: 'Newark, CA'
@@ -238,6 +238,20 @@ bio.display = function(){
   for(var contact in bio.contacts){
     var formattedContactItem = HTMLcontactGeneric.replace('%data%',bio.contacts[contact])
                                                  .replace('%contact%',contact);
+    if(contact === 'email'){
+        formattedContactItem = HTMLemail.replace('%data%',bio.contacts[contact])
+                                        .replace('%link%', 'mailto:' + bio.contacts[contact]);
+    }else if(contact === 'github'){
+        formattedContactItem = HTMLgithub.replace('%data%',bio.contacts[contact])
+                                                .replace('%link%', 'https://github.com/' + bio.contacts[contact]);
+    }else if(contact === 'location'){
+        formattedContactItem = HTMLlocation.replace('%data%',bio.contacts[contact])
+                                           .replace('%link%', 'https://www.google.com/maps/place/Newark,+CA+94560');
+    }else if(contact === 'mobile'){
+        formattedContactItem = HTMLmobile.replace('%data%',bio.contacts[contact])
+                                         .replace('%link%', 'tel://' + bio.contacts[contact]);
+    }
+
     $('#topContacts').append(formattedContactItem);
     $('#footerContacts').append(formattedContactItem);
   }

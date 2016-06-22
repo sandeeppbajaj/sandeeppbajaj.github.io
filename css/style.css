@@ -128,6 +128,11 @@ a {
   padding: 10px;
 }
 
+.flex-item a{
+    display: inline;
+    color: #FFF;
+}
+
 .center-content {
   padding-top: 2.5%;
   padding-left: 5%;
