@@ -106,7 +106,11 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    scrollwheel: false,
+    scaleControl: true,
+    streetViewControl: true,
+    zoomControl: true
   };
 
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to
@@ -179,7 +183,7 @@ function initializeMap() {
     // fit the map to the new marker
     map.fitBounds(bounds);
     // center the map
-    map.setCenter(bounds.getCenter());
+    //map.setCenter(bounds.getCenter());
   }
 
   /*
